@@ -1,0 +1,7 @@
+nimi = input("Palun sisestage enda nimi: ")
+lubatud_kiirus = int(input("Palun sisestage lubatud kiirus täisarvuna: "))
+tegelik_kiirus = int(input("Palun sisestage tegelik kiirus täisarvuna: "))
+trahv = min(190, ((tegelik_kiirus - lubatud_kiirus) * 3))
+lause_keskosa = (", kiiruse ületamise eest on teie trahv ")
+lause_lõpp = (" eurot.")
+print(nimi + lause_keskosa + str(trahv) + lause_lõpp)
