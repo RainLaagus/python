@@ -5,22 +5,21 @@ käärid = "käärid"
 valikud = [kivi, paber, käärid]
 arvuti_valik = random.choice(valikud)
 
+def ilusta_valik(valik):
+    if valik == paber:
+        return valik + "i."
+    else:
+        return valik + "."
+
 print("Tere, mängime kivi, paber, käärid!")
 
-while True:
-    mängija_valik = input("Tee enda valik: ")
-    if mängija_valik in valikud: break
+mängija_valik = input("Tee enda valik: ")
+while not mängija_valik in valikud:
     print ("See valik ei sobi, vali uuesti: ")
+    mängija_valik = input("Tee enda valik: ")
+print("Sina valisid " + ilusta_valik(mängija_valik))
+print("Mina valisin " + ilusta_valik(arvuti_valik))
 
-if mängija_valik == paber:
-    print("Sina valisid " + mängija_valik + "i.")
-else:
-    print("Sina valisid " + mängija_valik + ".")
-
-if arvuti_valik == paber:
-    print("Mina valisin " + arvuti_valik + "i.")
-else:
-    print("Mina valisin " + arvuti_valik + ".")
 
 if ((mängija_valik == kivi and arvuti_valik == paber) or
     (mängija_valik == käärid and arvuti_valik == kivi) or
