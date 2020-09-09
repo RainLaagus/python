@@ -3,10 +3,10 @@ kivi = "kivi"
 paber = "paber"
 käärid = "käärid"
 valikud = ["kivi", "paber", "käärid"]
+arvuti_valik = random.choice(valikud)
 
 print("Tere, mängime kivi, paber, käärid!")
 
-arvuti_valik = random.choice(valikud)
 while True:
     mängija_valik = input("Tee enda valik: ")
     if mängija_valik in valikud: break
@@ -16,6 +16,7 @@ if mängija_valik == paber:
     print("Sina valisid " + mängija_valik + "i.")
 else:
     print("Sina valisid " + mängija_valik + ".")
+
 if arvuti_valik == paber:
     print("Mina valisin " + arvuti_valik + "i.")
 else:
