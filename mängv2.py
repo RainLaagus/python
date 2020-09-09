@@ -22,9 +22,13 @@ if arvuti_valik == paber:
 else:
     print("Mina valisin " + arvuti_valik + ".")
 
-if mängija_valik == kivi and arvuti_valik == paber or mängija_valik == käärid and arvuti_valik == kivi or mängija_valik == paber and arvuti_valik == käärid:
+if ((mängija_valik == kivi and arvuti_valik == paber) or
+    (mängija_valik == käärid and arvuti_valik == kivi) or
+    (mängija_valik == paber and arvuti_valik == käärid)):
     print("Mina võitsin!")
-elif mängija_valik == kivi and arvuti_valik == käärid or mängija_valik == paber and arvuti_valik == kivi or mängija_valik == käärid and arvuti_valik == paber:
+elif ((mängija_valik == kivi and arvuti_valik == käärid) or
+    (mängija_valik == paber and arvuti_valik == kivi) or
+    (mängija_valik == käärid and arvuti_valik == paber)):
     print("Sina Võitsid!")
 else: 
     print("Jäime viiki!")
