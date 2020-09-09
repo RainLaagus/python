@@ -2,7 +2,7 @@ import random
 kivi = "kivi"
 paber = "paber"
 käärid = "käärid"
-valikud = ["kivi", "paber", "käärid"]
+valikud = [kivi, paber, käärid]
 arvuti_valik = random.choice(valikud)
 
 print("Tere, mängime kivi, paber, käärid!")
