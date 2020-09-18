@@ -12,5 +12,7 @@ elif sugu == "n" and treeningu_tüüp == "1":
     print("Pulsisagedus peaks olema vahemikus " + str(round((206 - (vanus * 0.88)) * 0.5)) + " kuni " + str(round(((206 - (vanus * 0.88)) * 0.7))))
 elif sugu == "n" and treeningu_tüüp == "2":
     print("Pulsisagedus peaks olema vahemikus " + str(round((206 - (vanus * 0.88)) * 0.7)) + " kuni " + str(round(((206 - (vanus * 0.88)) * 0.8))))
-else:
+elif sugu == "n" and treeningu_tüüp == "3":
     print("Pulsisagedus peaks olema vahemikus " + str(round((206 - (vanus * 0.88)) * 0.8)) + " kuni " + str(round(((206 - (vanus * 0.88)) * 0.87))))
+else:
+    print("Ei ole sobivad andmed")
