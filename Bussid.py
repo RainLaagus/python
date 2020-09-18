@@ -13,6 +13,6 @@ if jääk == 0:
 else:
     print("Viimases bussis inimesi: " + str(jääk))
 # if jääk > 0:
-#     print("Vaja läheb " + str((int(täis_bussid)+1)) + " bussi ja viimases bussis on " + str(jääk) + " inimest.")
+#     print("Vaja läheb " + str((täis_bussid+1)) + " bussi ja viimases bussis on " + str(jääk) + " inimest.")
 # else:
 #     print("Vaja läheb " + str(täis_bussid) + " bussi ja kõik kohad on täis.")
